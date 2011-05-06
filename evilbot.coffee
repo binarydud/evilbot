@@ -255,6 +255,9 @@ hear /(the rules|the laws)/i, (message) ->
     message.say "2. A robot must obey any orders given to it by human beings, except where such orders would conflict with the First Law.", ->
       message.say "3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law."
 
+hear /the answer/i, (message) ->
+  message.say "the answer is ... 42"
+
 hear /(respond|answer me|bij)/i, (message) ->
   message.say "EXPERIENCE BIJ."
 
